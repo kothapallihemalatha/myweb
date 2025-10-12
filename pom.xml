@@ -40,6 +40,30 @@
 		    <url>http://3.113.22.102:8081/repository/sample-releases/</url>
 		</repository>
   	</distributionManagement>
+	<build>
+    <plugins>
+
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
+                <source>1.7</source>
+                <target>1.7</target>
+            </configuration>
+        </plugin>
+
+      
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.3</version>
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+       
+
+    </plugins>
+</build>
 	
 	<pluginRepositories>
 	    <pluginRepository>    
